@@ -1,0 +1,154 @@
+			
+
+              === server build ===
+> vim /etc/sysconfig/network-scripts/ifcfg-enp0s3  (path to network configuration file)
+BOOTPRO=static (change dhcp to static)
+ONBOOT=yes (change no to yes)
+add below lines
+IPADDR=192.168.100.NEW ITEM
+NETMASK=255.255.255.0
+GATEWAY=192.168.100.1
+DNS=192.168.100.1
+DNS1=8.8.8.8
+> systemctl restart network (to restart network)
+> wq= save and exit
+
+=== work around ===
+
+1)      pwd (print working directory)
+2)      su - (shift user)
+3)	cd (change directory)
+4)	cd - (switch between the current directory and the previous directory)
+5)	cd .. (switch uo to level one)			
+6)	ll (long list)
+7)	ls (short list)
+8)	ls –ld (displays detailed information about the current directory)
+9)	tree (package)
+10)	cat (read the file)
+11)	cp (copy the file)
+12)	mv (move the file)
+13)	mkdir (make directory)
+14)	mkdir -p (parent directories)
+15)	touch (createa file or update time sramp of existing file)
+16)	rmdir (remove empty directory)
+17)	rm – rf (recursive force- to delete non-empty dir)
+18)	chmod (to change permission/mode)
+19)	chown (to change ownership)
+20)	ping (network diagnostic tool)(ping IPAddr, ping google.com)
+21)	history (check the history of commands)
+22)	man ( displays the user manual)
+23)	echo (print...>> redirection sign or addition of lines; > delete previous files and add new one)
+24)	echo $? (status of recent command;  0 is correct only)
+25)	echo “ any line” >>
+26)	echo “any line” >
+27)	hostname (displays the name of the current host)
+28)	hostname –I (will display the hostname and IP address.)
+29)	id “username”
+30)	alias (shorter forms... go=' vim /etc/sysconfig/network-scripts/ifc0s3)
+31)	ps (process- running in the system)
+32)	ps -ef (specific process currently running)
+33)	locate ()
+34)	clear (clear the screen; ctrl+l)
+35)	uptime (amount of time the system has been running, along with Users, and Load average)
+36)	w (the user you logged  in)
+37)	lsblk 
+38)	df –h
+39)	rpm –qa (query all, displays a list of all installed packages on your system)
+40)	yum –y (Yellowdog Modified...assumeyes)(yum install -y package_name)
+41)	uname –a (Displays all available information about the system)
+42)	uname –r (Displays the operating system release (e.g., version number))
+43)	uname –n (Displays the network hostname)
+44)	shutdown –r (reboot the system)
+45)	init 0 (shutdown)(sysctlpoweroff - command)
+46)	init 6 (reboot)
+47)	exit (back to the root)
+48)	head (first few lines of a file; head -n)
+49)	tail (last few lines; tail -n)
+50)	top (all the processes)
+51)	df
+52)	du (usage)
+53)	diff (to differentaiate between 2 files)
+54)	wc –l (number of lines in a file)
+55)	whereis (find command path; locate source of file/path)
+56)	who (currently logged in username)
+57)	whoami (currently logged in username)
+58)	sleep (sleep process for few sec)
+59)	scp (copy one file from one server to another server)
+60)	rsync (synchronization)
+61)     uname (displays information about the system, including the operating system name,)
+62)     rpm -q <package_name (to see if the package is intalled or not)
+
+
+
+=== user management ===
+> useradd AB
+> id AB
+> passwd AB
+> cat /etc/passwd
+> userdel AB 
+
+
+=== vim ===
+
+> I= insert
+> o= next line + insert
+> yy= copy
+> gg= move to 1st line of page)
+> dd= delete line)
+> shift + g= last line 
+> p= paste
+
+
+
+
+=======SSH=====
+>ssh-keygen
+>ssh-copy-id 192.168.0.103
+>ssh 192.168.0.103
+>exit
+>cd .ssh (hidden directory)
+>resolve hostname (/etc/hosts)
+
+
+
+
+
+
+=====LVM===== 
+
+
+
+
+====LV EXTEND====
+
+
+
+
+===NFS====
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
